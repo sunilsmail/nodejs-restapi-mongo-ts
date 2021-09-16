@@ -20,6 +20,7 @@ export class TaskRepository {
     async createTask(task) {
         let data = {};
         try {
+            this.logger.error('Task Data::' + task);
             data = await TaskModel.create(task);
         } catch(err) {
             this.logger.error('Error::' + err);

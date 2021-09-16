@@ -17,7 +17,7 @@ export class TaskController {
     }
 
     async createTask(task) {
-        this.logger.info('Controller: createTask', task);
+        this.logger.info('Controller: createTask', JSON.stringify(task));
         return await this.taskService.createTask(task);
     }
 
