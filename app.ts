@@ -53,7 +53,7 @@ class App {
         });
 
         this.express.get("/", (req, res, next) => {
-            res.send("Typescript App works!!");
+            res.send("Typescript App works!! you can do any thing");
         });
 
         // swagger docs
